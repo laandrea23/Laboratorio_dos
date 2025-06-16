@@ -1,6 +1,9 @@
 // E1: Color y Forma
 // Laura Andrea Hurtado Acosta - 202213259
+// La composición realizada se basa en una parte de una obra de mosaico con patrón geométrico
+// abstracto sin autor que sigue el estilo Bauhaus.
 
+//Canva fondo blanco
 size(500, 500);
 background(225, 225, 225);
 
