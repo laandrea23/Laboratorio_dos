@@ -48,17 +48,20 @@ void draw() {
     float y = height/2 + radios[i] * sin(angulo);
     
     // pulso de planetas
-    float sizeMod = map(sin(frameCount * velocidades[i]), -1, 1, tamanos[i] - 5, tamanos[i] + 5);
+    float tamano_Planeta = map(sin(frameCount * velocidades[i]), -1, 1, tamanos[i] - 5, tamanos[i] + 5);
     
     // Cambio de color 
     //hue() es una función que extrae el valor del tono (color base) de un color que está en el modo de color HSB (Hue, Saturation, Brightness).
     float tono = (hue(colores[i]) + frameCount * 0.3) % 360;
     fill(tono, 80, 100);
     
-    ellipse(x, y, sizeMod, sizeMod);
+    ellipse(x, y, tamano_Planeta, tamano_Planeta);
   }
 }
 
 //Decidi hacer el sistema solar ya que primero me deja aplicar muchas de las funciones aprendidas hasta el momento 
 //y agregar map() y colormode(), adicionalemte es una composición completa en la que se puede
 //visualizar como va cambiando desde color y forma en los elementos que componen el espacio.
+
+//https://processing.org/reference/map_.html
+//https://processing.org/reference/colorMode_.html
