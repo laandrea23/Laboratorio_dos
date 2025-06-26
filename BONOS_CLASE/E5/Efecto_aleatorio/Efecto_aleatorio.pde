@@ -16,7 +16,7 @@ void draw() {
   radio = (numaleatorio * width/4);
 
   fill (random(100), random(80), random(200));
-  ellipse(x, y, radio, radio);
+  line(x, y, radio, radio);
   x += 10;
   //controlar el dibujo en el eje horizontal
 
